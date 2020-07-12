@@ -1,0 +1,27 @@
+{
+  "name": "devconnector",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server",
+    "server": "env-cmd --file='./config/dev.env' nodemon src/server",
+    "dbserver": "/home/shindeshubhamm/mongodb/bin/mongod --dbpath /home/shindeshubhamm/mongodb-data"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.6.0",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.23",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "env-cmd": "^10.1.0",
+    "nodemon": "^2.0.4"
+  }
+}
